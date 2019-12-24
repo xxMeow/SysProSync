@@ -126,7 +126,7 @@ static int __init mod_init(void)
 	ops_post.pf = PF_INET;
 	ops_post.hooknum= NF_INET_POST_ROUTING;
 	ops_post.priority = NF_IP_PRI_FIRST;
-	// Hook: Pre Routing
+	// Hook: Forwarding
 	ops_fwrd.hook = hook_fwrd;
 	ops_fwrd.pf = PF_INET;
 	ops_fwrd.hooknum = NF_INET_FORWARD;
